@@ -15,9 +15,9 @@ function getPH(vBase) {
     const cb = parseFloat(document.getElementById('baseConc').value) || 0.1;
     const ca = parseFloat(state.targetAcidConc);
     const av = parseFloat(document.getElementById('acidVol').value) || 25;
-    const molA = (ca * av) / 1000;
-    const molB = (cb * vBase) / 1000;
-    const totalV_L = (av + vBase) / 1000;
+    const molA = ca * av;
+    const molB = cb * vBase;
+    const totalV_L = av + vBase;
 
     if (molA > molB) {
         const excessH = (molA - molB) / totalV_L;
@@ -85,8 +85,8 @@ const stopTitration = () => {
     state.currentSpeed = 100;
 };
 
-document.getElementById('titrate-btn').addEventListener('mousedown', startTitration);
-window.addEventListener('mouseup', stopTitration);
+document.getElementById('titrate-btn').addEventListener('pointerdown', startTitration);
+window.addEventListener('pointerup', stopTitration);
 
 document.getElementById('showConc').addEventListener('change', function() {
     document.getElementById('acidConcDisp').className = this.checked ? 'conc-visible' : 'conc-hidden';
