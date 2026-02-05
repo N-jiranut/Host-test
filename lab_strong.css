@@ -95,11 +95,11 @@ header h1 {
         order: 1;
     }
 
-    .btn-btn-action{
+    .btn-action{
         order: 2;
     }
-    
-    .btn-btn-reset{
+
+    .btn-reset{
         order: 3;
     }
 }
