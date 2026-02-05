@@ -90,6 +90,18 @@ header h1 {
     .apparatus-box {
         transform: scale(0.8); /* ย่อลงเพื่อให้เห็นครบในจอมือถือ */
     }
+
+    .card-status-card {
+        order: 1;
+    }
+
+    .btn-btn-action{
+        order: 2;
+    }
+    
+    .btn-btn-reset{
+        order: 3;
+    }
 }
 
 /* การตกแต่งการ์ด (แผงควบคุม) */
