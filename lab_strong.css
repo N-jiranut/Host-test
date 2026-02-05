@@ -97,6 +97,7 @@ header h1 {
 
     .btn-action{
         order: 2;
+        color: rgb(255, 17, 17);
     }
 
     .btn-reset{
