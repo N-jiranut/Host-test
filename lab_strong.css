@@ -318,7 +318,7 @@ input, select {
 
 /* ปุ่มหยดสาร (Action) */
 .btn-action {
-    background: linear-gradient(135deg, #ffffff 0%, #2ecc71 100%);
+    background: linear-gradient(135deg, #5a02fc41 0%, #ff0000 100%);
     color: rgb(255, 0, 0);
     box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -326,7 +326,7 @@ input, select {
 
 .btn-action:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
     filter: brightness(1.05);
 }
 
